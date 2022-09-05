@@ -1,0 +1,212 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --button-grey-color: #f5f4fa;
+  --contacts-grey-color: rgba(255, 255, 255, 0.6);
+  --bg-color-dark: #2f303a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: capitalize;
+
+  border: none;
+  outline: none;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--black-color);
+  text-transform: capitalize;
+}
+
+.logo.logo-white {
+  color: var(--white-color);
+}
+
+.logo > .primary {
+  color: var(--primary-color);
+}
+
+/* Site navigation */
+.site-nav-link {
+  --site-nav-link-color: #212121;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: capitalize;
+
+  color: var(--site-nav-link-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--primary-color);
+}
+
+.site-nav-link.current {
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--bg-color-dark);
+}
+/* Contacts navigation */
+.contacts-nav {
+  font-style: normal;
+}
+
+.contacts-nav .contacts-nav-email,
+.contacts-nav .contacts-nav-phone,
+.contacts-nav .contacts-nav-address {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.contacts-nav-email.grey,
+.contacts-nav-phone.grey {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--contacts-grey-color);
+}
+
+.contacts-nav .contacts-nav-address {
+  color: var(--white-color);
+}
+
+.contacts-nav .contacts-nav-email:hover,
+.contacts-nav .contacts-nav-email:focus,
+.contacts-nav .contacts-nav-phone:focus,
+.contacts-nav .contacts-nav-phone:hover,
+.contacts-nav .contacts-nav-address:hover,
+.contacts-nav .contacts-nav-address:focus {
+  color: var(--primary-color);
+}
+
+/* Main for page Studio */
+.solutions {
+  background-color: var(--bg-color-dark);
+}
+.solutions .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.solutions .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+
+  background-color: var(--primary-color);
+}
+
+.section .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Advantages */
+
+.advantages-list .advantages-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advantages-list .advantages-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--primary-text-color);
+}
+
+/* Our team */
+.team-list .team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.team-list .team-item-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+/* Main for page Portfolio */
+.work-list-filter .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  color: var(--title-text-color);
+
+  background-color: var(--button-grey-color);
+}
+
+.work-list-filter .button:hover,
+.work-list-filter .button:focus {
+  color: var(--white-color);
+
+  background-color: var(--primary-color);
+}
+
+.work-list .work-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.work-list .work-item-text {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--primary-text-color);
+}
