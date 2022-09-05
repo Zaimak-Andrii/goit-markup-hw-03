@@ -19,7 +19,8 @@ body {
 h1,
 h2,
 h3,
-ul {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -50,8 +51,6 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  border: 1px solid red;
 }
 
 /* Header */
@@ -214,7 +213,14 @@ ul {
   background-color: var(--primary-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -223,6 +229,17 @@ ul {
 }
 
 /* Advantages */
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list > .item {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.advantages-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .advantages-list .advantages-item-title {
   font-weight: 700;
@@ -233,14 +250,53 @@ ul {
 }
 
 .advantages-list .advantages-item-text {
+  margin-top: 10px;
+
   font-size: 14px;
   line-height: 1.71;
 
   color: var(--primary-text-color);
 }
+/* Our work */
+.work-list {
+  display: flex;
+}
+
+.work-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-list > .item > img {
+  display: block;
+}
 
 /* Our team */
-.team-list .team-item-name {
+.team {
+  background-color: var(--button-grey-color);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list > .item {
+  border-radius: 0px 0px 4px 4px;
+
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list .avatar {
+  display: block;
+}
+
+.team-list .title {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -249,7 +305,10 @@ ul {
   color: var(--title-text-color);
 }
 
-.team-list .team-item-position {
+.team-list .description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
