@@ -317,7 +317,18 @@ p {
 }
 
 /* Main for page Portfolio */
+.work-list-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.work-list-filter > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .work-list-filter .button {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -335,7 +346,40 @@ p {
   background-color: var(--primary-color);
 }
 
-.work-list .work-item-title {
+.our-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.our-work-list > .item {
+  width: calc((100% - 2 * 30px) / 3);
+
+  background-color: var(--white-color);
+}
+
+.our-work-list .content {
+  --border: 1px solid #eeeeee;
+
+  padding: 20px 24px;
+  border-bottom: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+}
+
+.our-work-list > .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.our-work-list > .item:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.our-work-list .image {
+  display: block;
+}
+
+.our-work-list .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -344,7 +388,9 @@ p {
   color: var(--title-text-color);
 }
 
-.work-list .work-item-text {
+.our-work-list .description {
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.88;
 
