@@ -10,28 +10,34 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Homework 2</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="link logo"><span class="primary">Web</span>Studio</a>
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-nav">
+          <a href="./index.html" class="link logo"><span class="primary">Web</span>Studio</a>
 
-        <ul class="list site-nav">
-          <li><a href="./index.html" class="link site-nav-link current">Студія</a></li>
-          <li><a href="./portfolio.html" class="link site-nav-link">Портфоліо</a></li>
-          <li><a href="" class="link site-nav-link">Контакти</a></li>
+          <ul class="list site-nav">
+            <li class="item"><a href="./index.html" class="link site-nav-link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link site-nav-link">Портфоліо</a></li>
+            <li class="item"><a href="" class="link site-nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list contacts-list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link item-email">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link item-phone">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list contacts-nav">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link contacts-nav-email">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link contacts-nav-phone">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Solutions -->
@@ -57,9 +63,7 @@
           </li>
           <li>
             <h3 class="advantages-item-title">ПЛАНУВАННЯ</h3>
-            <p class="advantages-item-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
+            <p class="advantages-item-text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
           <li>
             <h3 class="advantages-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -114,24 +118,22 @@
     <footer>
       <a href="./index.html" class="link logo logo-white"><span class="primary">Web</span>Studio</a>
       <address>
-        <ul class="list contacts-nav">
-          <li>
+        <ul class="list contacts-list">
+          <li class="item">
             <a
               href="https://goo.gl/maps/qrpCz5nqf4nP3WyB6"
               target="_blank"
               rel="noopener noreferrer"
-              class="link contacts-nav-address"
+              class="link item-address"
             >
               м. Київ, пр-т Лесі Українки, 26
             </a>
           </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contacts-nav-email grey"
-              >info@devstudio.com</a
-            >
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link item-email grey">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link contacts-nav-phone grey">+38 096 111 11 11</a>
+          <li class="item">
+            <a href="tel:+380961111111" class="link item-phone grey">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
