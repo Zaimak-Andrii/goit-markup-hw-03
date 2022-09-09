@@ -243,6 +243,10 @@ p {
 }
 
 /* Advantages */
+.section.advantages {
+  padding-bottom: 0;
+}
+
 .advantages-list {
   display: flex;
 }
@@ -308,9 +312,11 @@ p {
   display: block;
 }
 
-.team-list .title {
-  margin-top: 30px;
+.team-list .content {
+  padding: 30px 20px;
+}
 
+.team-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -321,7 +327,6 @@ p {
 
 .team-list .description {
   margin-top: 10px;
-  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.19;
