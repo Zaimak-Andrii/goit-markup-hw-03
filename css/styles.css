@@ -182,7 +182,7 @@ p {
   color: var(--contacts-grey-color);
 }
 
-.contacts-list .contacts-nav-address {
+.contacts-list .item-address {
   color: var(--white-color);
 }
 
